@@ -67,8 +67,8 @@ window.addEventListener('scroll',()=>{const activesec = document.getElementsByCl
         activesec.classList.remove('your-active-class')
     };
     sections.forEach(function(section){
-        const react = section.getBoundingClientRect();
-        if(react.top >=-50 && react.top<400){
+        const distance = section.getBoundingClientRect();
+        if(distance.top >=-50 && distance.top<400){
             section.classList.add('your-active-class');
         }
     })
